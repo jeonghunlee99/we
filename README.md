@@ -1,4 +1,4 @@
-# Weather App
+# Weather App_clone
 
 ## 프로젝트 소개 👨‍💻
 
