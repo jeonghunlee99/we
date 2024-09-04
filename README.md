@@ -2,18 +2,18 @@
 
 ## 프로젝트 소개 👨‍💻
 
-Weather App은 Flutter를 기반으로 한 실시간 날씨 정보 제공 애플리케이션입니다. 사용자의 현재 위치를 추적하고, OpenWeatherMap API를 활용해 해당 위치의 날씨와 대기질 정보를 시각적으로 제공하는 기능을 가지고 있습니다. 이 앱은 깔끔하고 직관적인 UI로 사용자가 쉽게 날씨와 대기질 정보를 확인할 수 있도록 설계되었습니다.
+Weather App은 Flutter를 기반으로 한 실시간 날씨 정보 제공 앱이다. 사용자의 현재 위치를 추적하고, OpenWeatherMap API를 활용해 해당 위치의 날씨와 대기질 정보를 시각적으로 제공하는 기능을 가지고 있음. 
 
 ## 목적 🎯
 
-이 프로젝트는 클론 코딩 학습을 목적으로 하며, 외부 API(OpenWeatherMap)를 사용해 데이터를 받아오고, 이를 Flutter 애플리케이션에서 활용하는 방법을 익히기 위해 제작되었습니다. API 통신, 데이터 처리, 상태 관리 및 UI 구성 등의 기술을 실습하며, 실시간 데이터를 기반으로 정보를 시각화하는 앱을 완성하는 것이 목표입니다.
+이 프로젝트는 클론 코딩 학습을 목적으로 하며, 외부 API(OpenWeatherMap)를 사용해 데이터를 받아오고, 이를 Flutter 애플리케이션에서 활용하는 방법을 익히기 위해 제작되었음. API 통신, 데이터 처리, 상태 관리 및 UI 구성 등의 기술을 실습하며, 실시간 데이터를 기반으로 정보를 시각화하는 앱을 완성하는 것이 목표이다.
 
 ## 주요 기능 ✨
 
-- **현재 위치 기반 날씨 정보 제공:** 사용자의 위치를 자동으로 추적해 해당 위치의 실시간 날씨와 대기 정보를 제공합니다.
-- **시각적 대기질 지수 표현:** 대기질 지수에 따라 아이콘과 텍스트로 상태를 시각적으로 표현합니다.
-- **날씨 및 대기질 상세 정보 표시:** 기온, 날씨 설명, 미세먼지 농도 등의 정보를 포함합니다.
-- **자동 업데이트:** 실시간으로 정보를 주기적으로 갱신하여 최신 데이터를 제공합니다.
+- **현재 위치 기반 날씨 정보 제공:** 사용자의 위치를 자동으로 추적해 해당 위치의 실시간 날씨와 대기 정보를 제공.
+- **시각적 대기질 지수 표현:** 대기질 지수에 따라 아이콘과 텍스트로 상태를 시각적으로 표현.
+- **날씨 및 대기질 상세 정보 표시:** 기온, 날씨 설명, 미세먼지 농도 등의 정보를 포함.
+- **자동 업데이트:** 실시간으로 정보를 주기적으로 갱신하여 최신 데이터를 제공.
 
 ## 주요 파일 구조 🗂️
 
@@ -37,7 +37,8 @@ lib/
  <details>
 <summary>1.현재위치 추적 (lib/data/my_location.dart)</summary>
 <div markdown="1">
-사용자의 현재 위치를 추적하여 위도와 경도를 가져옵니다. 이를 통해 OpenWeatherMap API에서 해당 위치의 날씨 데이터를 조회할 수 있습니다.
+ <br>
+lib/data/my_location.dart 파일에서 사용자의 현재 위치를 추적하여 위도와 경도를 가져오고, 이를 통해 OpenWeatherMap API에서 해당 위치의 날씨 데이터를 조회할 수 있음.
 
 ```dart
 
@@ -61,9 +62,10 @@ class Mylocation {
 </details>
 
   <details>
-<summary>2.날씨 및 대기질 정보 가져오기</summary>
+<summary>2.날씨 및 대기질 정보 가져오기(lib/data/network.dart)</summary>
 <div markdown="2">
-lib/data/network.dart 파일에서는 OpenWeatherMap API와 통신하여 날씨와 대기질 데이터를 가져오는 기능을 구현합니다.
+ <br>
+lib/data/network.dart 파일에서는 OpenWeatherMap API와 통신하여 날씨와 대기질 데이터를 가져오는 기능을 구현.
 
 ```dart
 
@@ -92,9 +94,10 @@ class Network {
 </details>
 
   <details>
-<summary>3. 날씨 및 대기질 UI 렌더링</summary>
+<summary>3. 날씨 및 대기질 UI 렌더링(lib/screens/weather_screen.dart)</summary>
 <div markdown="3">
-lib/screens/weather_screen.dart 파일에서는 OpenWeatherMap API에서 가져온 날씨 및 대기질 정보를 사용자에게 시각적으로 표시하는 UI를 구현합니다.
+ <br>
+lib/screens/weather_screen.dart 파일에서는 OpenWeatherMap API에서 가져온 날씨 및 대기질 정보를 사용자에게 시각적으로 표시하는 UI를 구현.
 
   ```dart
  
@@ -355,11 +358,11 @@ class _WeatherScreenState extends State<WeatherScreen> {
 
 ## 사용된 패키지 📦
 
-- [geolocator](https://pub.dev/packages/geolocator): 사용자의 위치 정보를 추적하기 위한 패키지. GPS, Wi-Fi, 셀룰러 네트워크를 통해 사용자의 현재 위치를 가져옵니다.
-- [http](https://pub.dev/packages/http): HTTP 요청을 보내고, 외부 API로부터 데이터를 받아오기 위한 패키지. OpenWeatherMap API와 통신하여 날씨 정보를 가져옵니다.
-- [google_fonts](https://pub.dev/packages/google_fonts): 다양한 구글 폰트를 쉽게 사용하기 위한 패키지. 앱에서 텍스트 스타일링에 사용됩니다.
-- [flutter_svg](https://pub.dev/packages/flutter_svg): SVG 형식의 이미지를 Flutter에서 렌더링하기 위한 패키지. 날씨 아이콘 등 다양한 벡터 이미지를 화면에 표시할 때 사용됩니다.
-- [timer_builder](https://pub.dev/packages/timer_builder): 실시간 타이머 기능을 구현하기 위한 패키지. 주기적으로 화면을 갱신하는 데 사용됩니다.
-- [intl](https://pub.dev/packages/intl): 날짜와 시간 형식을 지역에 맞게 포맷팅하기 위한 패키지. 앱 내에서 날짜와 시간 표현을 처리합니다.
-- [flutter_spinkit](https://pub.dev/packages/flutter_spinkit): 로딩 스피너를 제공하는 패키지. 데이터를 불러오는 동안 사용자에게 로딩 상태를 시각적으로 표시합니다.
+- [geolocator](https://pub.dev/packages/geolocator): 사용자의 위치 정보를 추적하기 위한 패키지. 사용자의 현재 위치를 가져옴.
+- [http](https://pub.dev/packages/http): HTTP 요청을 보내고, 외부 API로부터 데이터를 받아오기 위한 패키지. OpenWeatherMap API와 통신하여 날씨 정보를 가져옴.
+- [google_fonts](https://pub.dev/packages/google_fonts): 다양한 구글 폰트를 쉽게 사용하기 위한 패키지. 앱에서 텍스트 스타일링에 사용.
+- [flutter_svg](https://pub.dev/packages/flutter_svg): SVG 형식의 이미지를 Flutter에서 렌더링하기 위한 패키지. 날씨 아이콘 등 다양한 벡터 이미지를 화면에 표시할 때 사용.
+- [timer_builder](https://pub.dev/packages/timer_builder): 실시간 타이머 기능을 구현하기 위한 패키지. 주기적으로 화면을 갱신하는 데 사용.
+- [intl](https://pub.dev/packages/intl): 날짜와 시간 형식을 지역에 맞게 포맷팅하기 위한 패키지. 앱 내에서 날짜와 시간 표현을 처리.
+- [flutter_spinkit](https://pub.dev/packages/flutter_spinkit): 로딩 스피너를 제공하는 패키지. 데이터를 불러오는 동안 사용자에게 로딩 상태를 시각적으로 표시.
 
