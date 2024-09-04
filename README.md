@@ -352,3 +352,14 @@ class _WeatherScreenState extends State<WeatherScreen> {
 ```
 </div>
 </details>
+
+## 사용된 패키지 📦
+
+- [geolocator](https://pub.dev/packages/geolocator): 사용자의 위치 정보를 추적하기 위한 패키지. GPS, Wi-Fi, 셀룰러 네트워크를 통해 사용자의 현재 위치를 가져옵니다.
+- [http](https://pub.dev/packages/http): HTTP 요청을 보내고, 외부 API로부터 데이터를 받아오기 위한 패키지. OpenWeatherMap API와 통신하여 날씨 정보를 가져옵니다.
+- [google_fonts](https://pub.dev/packages/google_fonts): 다양한 구글 폰트를 쉽게 사용하기 위한 패키지. 앱에서 텍스트 스타일링에 사용됩니다.
+- [flutter_svg](https://pub.dev/packages/flutter_svg): SVG 형식의 이미지를 Flutter에서 렌더링하기 위한 패키지. 날씨 아이콘 등 다양한 벡터 이미지를 화면에 표시할 때 사용됩니다.
+- [timer_builder](https://pub.dev/packages/timer_builder): 실시간 타이머 기능을 구현하기 위한 패키지. 주기적으로 화면을 갱신하는 데 사용됩니다.
+- [intl](https://pub.dev/packages/intl): 날짜와 시간 형식을 지역에 맞게 포맷팅하기 위한 패키지. 앱 내에서 날짜와 시간 표현을 처리합니다.
+- [flutter_spinkit](https://pub.dev/packages/flutter_spinkit): 로딩 스피너를 제공하는 패키지. 데이터를 불러오는 동안 사용자에게 로딩 상태를 시각적으로 표시합니다.
+
